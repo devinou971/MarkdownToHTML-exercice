@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Rendu Markdown vers HTML
+	</title>
+</head>
+<body>
+	<header>
+		<h1>
+			Rendu Markdown vers HTML
+		</h1>
+		<style type="text/css">
+			*{
+				font-family: arial;
+			}
+			h1{
+				text-align: center;
+				color: red;
+			}
+
+			footer{
+				text-align: center;
+				margin-top: 20px;
+				margin-left: -10px;
+				margin-right : -10px;
+				line-height: 150px;
+				padding-top: 0px;
+				color: white;
+				background-color: black;
+				height: 150px;
+			}
+			#input{
+				display: inline-block;
+			}
+			#output{
+				display: inline-block;
+			}
+			main{
+				display: flex;
+			}
+		</style>
+	</header>
+	<main>
+		<div id="input">
+			<form>
+				<label for="code">Entrez votre code Markdown ici : </label><br>
+				<textarea id="code" placeholder="#Mon code Markdown" onchange="" rows="20" cols="50"></textarea>
+			</form>
+			<button onclick="makeTranslation()">Convertir</button>
+
+		</div>
+		<div id="output">
+			<div id="rendu">
+				
+			</div>
+			<div>
+				<textarea id="HTMLcode" readonly="true"></textarea>
+			</div>
+		</div>
+	</main>
+	<footer>
+		&copy IUT Annecy - 2021
+	</footer>
+	<script type="text/javascript" src="tree.js"></script>
+	<script type="text/javascript" src="grammar.js"></script>
+	<script type="text/javascript" src="lexical.js"></script>
+	<script type="text/javascript" src="syntaxic.js"></script>
+	<script type="text/javascript" src="translator.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
