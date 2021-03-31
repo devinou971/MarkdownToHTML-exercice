@@ -1,17 +1,11 @@
-# Markedown vers HTML
-C'est un exercice pour le DUT
+# Markedown to HTML
+This is an exercice I had to do for my university 
 
-## Rappel des commandes git :
-
-````
-git add -A
-git commit
-git push
-````
+**THIS DOCUMENT WILL BE WRITTEN IN FRENCH**
 
 ## La grammaire : 
 
-J'ai décidé de prendre cette grammaiore : 
+J'ai décidé de prendre cette grammaire : 
 
 ````
 PROG 			=> 	LIGNE retourLigne PROG | e
